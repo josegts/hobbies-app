@@ -1,0 +1,11 @@
+.alert-error{
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+  background: rgba(254, 233, 233, 0.968);
+  border-radius: 10px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

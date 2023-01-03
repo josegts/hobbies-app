@@ -1,0 +1,16 @@
+.card {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  height: 100%;
+  padding: 8px;
+  justify-content: space-between;
+}
+
+.card button{
+  border-radius: 100%;
+  border: none;
+  background-color: blueviolet;
+  color: white;
+}

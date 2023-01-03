@@ -1,0 +1,8 @@
+.added{
+  display: flex;
+  width: 100%;
+  gap: 5px;
+}
+.added input{
+  width: 100%;
+}

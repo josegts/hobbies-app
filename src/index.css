@@ -1,0 +1,49 @@
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 10px;
+}
+
+.app{
+  display: grid;
+  grid-template-rows: 70px auto;
+  grid-template-columns: 1fr;
+  gap: 4px;
+  grid-template-areas: "sidebar"
+                      "main";
+  height: 100vh;
+}
+
+.nav{
+  grid-area: sidebar;
+  background-color: #fe8cdf;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.menu{
+  grid-area: menu;
+  background-color: #26ffc9;
+}
+
+.main{
+  grid-area: main;
+  background-color: #f3eeee;
+}
