@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Added } from '../components/added/Added';
 import { Alert } from '../components/alert/Alert';
 import { Card } from '../components/card/Card';
@@ -32,6 +32,18 @@ export const Series = () => {
     setSeries([...series, serie]);
     setSerie('');
   };
+
+  //APIs, controlar
+  useEffect(()=>{
+    console.log('se monto el componente')
+    return () => {
+      console.log("se desmonto el componente")
+    }
+  },[])
+
+  useEffect(()=>{
+    console.log("las series cambiaron")
+  },[series])
 
   return (
     <div className='app-container'>
